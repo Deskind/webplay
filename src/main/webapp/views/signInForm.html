@@ -20,17 +20,17 @@
     </head>
     <body>
         <div id="signForm">
-            <form name="signForm">
+            <form name="signForm" method="get">
             <label for="signName">Name:</label>
             <br>
-            <input type="text" id="signName" />
+            <input type="text" name="signName" id="signName" ng-model="signName"/>
             <br>
             <label for="signPassword">Password:</label>
             <br>
-            <input type="text" id="signPassword" />
+            <input type="text" name="signPassword" id="signPassword" ng-model="signPassword"/>
             <br>
             <br>
-            <input type="submit" value="SignIn"/>
+            <button ng-click="submitSignIn()">SignIn</button>
             </form>
         </div>
     </body>
